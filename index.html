@@ -19,29 +19,20 @@
         <h2>Formulários</h2>
         <div class="formulario">
             <div class="sem-regex">
-                <div class="container-progresso">
-                    <div class="progresso">
-                        <div class="active">Dados Pessoais</div>
-                        <div>Contato</div>
-                        <div>Endereço</div>
-                        <div>Conta</div>
-                    </div>
-                </div>
+
                 <form id="sem-regex" action="#">
                     <fieldset>
                         <legend>sem regex</legend>
-                        <div class="etapa-ativada">
                             <label for="nome">Nome Completo</label>
                             <input type="text" id="nome" name="nome" placeholder="Nome Completo">
                             <label for="cpf">CPF *</label>
-                            <input type="text" id="cpf" name="cpf"placeholder="000.000.000-00">
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
                             <label for="data_nasc">Data de Nascimento</label>
                             <input type="date" id="data_nasc" name="data_nasc" required>
                             <div class="buttons">
                                 <button type="button" class="next">Próximo</button>
                             </div>
-                        </div>
-                        <div class="etapa">
+        
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" placeholder="seu@gmail.com" required>
                             <label for="telefone">Telefone</label>
@@ -50,8 +41,7 @@
                                 <button type="button" class="prev">Voltar</button>
                                 <button type="button" class="next">Próximo</button>
                             </div>
-                        </div>
-                        <div class="terceira-etapa">
+                        
                             <label for="cep">CEP</label>
                             <input type="text" id="cep" name="cep" required placeholder="00000-000">
                             <label for="endereco">Endereço</label>
@@ -61,42 +51,57 @@
                             <label for="estado">Estado</label>
                             <select id="estado" name="estado" required>
                                 <option value="">Selecione</option>
-                                <option>SP</option>
-                                <option>RJ</option>
-                                <option>MG</option>
-                                <option>RS</option>
-                                <option>BA</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
                             </select>
 
                             <div class="buttons">
                                 <button type="button" class="prev">Voltar</button>
                                 <button type="button" class="next">Próximo</button>
                             </div>
-                        </div>
-                        <div class="etapa">
+                       
                             <label for="usuario">Usuário</label>
-                            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required >
+                            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
                             <label for="senha">Senha</label>
                             <input type="password" id="senha" name="senha" placeholder="Senha" required>
                             <label for="confirmarSenha">Confirmar Senha</label>
-                            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha" required >
+                            <input type="password" id="confirmarSenha" name="confirmarSenha"
+                                placeholder="Confirmar Senha" required>
                             <div class="buttons">
                                 <button type="button" class="prev">Voltar</button>
                             </div>
                             <button type="submit" class="submit">Finalizar Cadastro</button>
-                        </div>
+                    
                     </fieldset>
                 </form>
             </div>
-           <div class="com-regex">
-                <div class="container-progresso">
-                    <div class="progresso">
-                        <div class="active">Dados Pessoais</div>
-                        <div>Contato</div>
-                        <div>Endereço</div>
-                        <div>Conta</div>
-                    </div>
-                </div>
+            <div class="com-regex">
+
                 <form id="sem-regex" action="#">
                     <fieldset>
                         <legend>sem regex</legend>
@@ -104,7 +109,7 @@
                             <label for="nome">Nome Completo</label>
                             <input type="text" id="nome" name="nome" placeholder="Nome Completo">
                             <label for="cpf">CPF *</label>
-                            <input type="text" id="cpf" name="cpf"placeholder="000.000.000-00">
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
                             <label for="data_nasc">Data de Nascimento</label>
                             <input type="date" id="data_nasc" name="data_nasc" required>
                             <div class="buttons">
@@ -131,11 +136,34 @@
                             <label for="estado">Estado</label>
                             <select id="estado" name="estado" required>
                                 <option value="">Selecione</option>
-                                <option>SP</option>
-                                <option>RJ</option>
-                                <option>MG</option>
-                                <option>RS</option>
-                                <option>BA</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+
                             </select>
 
                             <div class="buttons">
@@ -145,11 +173,12 @@
                         </div>
                         <div class="etapa">
                             <label for="usuario">Usuário</label>
-                            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required >
+                            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
                             <label for="senha">Senha</label>
                             <input type="password" id="senha" name="senha" placeholder="Senha" required>
                             <label for="confirmarSenha">Confirmar Senha</label>
-                            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha" required >
+                            <input type="password" id="confirmarSenha" name="confirmarSenha"
+                                placeholder="Confirmar Senha" required>
                             <div class="buttons">
                                 <button type="button" class="prev">Voltar</button>
                             </div>

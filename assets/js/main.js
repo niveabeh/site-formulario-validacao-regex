@@ -7,77 +7,96 @@ function ValidarForm() {
     const expDTNas = /^([0-9]{2}[\/]){2}[0-9]{4}$/;
     const expSenha = /^[A-z0-9]{4,}.{1,}$/;
     const expRg = /^[0-9]{1}[.][0-9]{3}[\.][0-9]{3}$/
+    const expEmail = /^[A-z0-9]{2,}@(gmail|estudante|outlook|hotmail)(\.com|sesisenai)(\.br)?$/
 
-    let nome = document.getElementById('nome').value;
-    let cpf = document.getElementById('cpf').value;
-    let fone = document.getElementById('fone').value;
-    let cep = document.getElementById('cep').value;
-    let dataNas = document.getElementById('dtnasc').value;
-    let senha = document.getElementById('senha').value;
-    let rg = document.getElementById('rg').value;
+    let nome2 = document.getElementById('nome2').value;
+    let cpf = document.getElementById('cpf2').value;
+    let fone = document.getElementById('fone2').value;
+    let cep = document.getElementById('cep2').value;
+    // let dataNas = document.getElementById('data_nasc2').value;
+    let senha = document.getElementById('senha2').value;
+    let email = document.getElementById('email2').value;
+    // let rg = document.getElementById('rg2').value;
 
-    if (!expNome.test(nome)) {
+    const modal = document.querySelector('dialog');
+    const fecharModal = document.getElementById('fechar')
+    let alteraTextp = document.getElementById('texto-aviso')
 
-        alert("Favor preencher o campo nome corretamente!");
-        document.getElementById('nome').focus();
+    if (!expNome.test(nome2)) {
+
+        modal.showModal();
+        alteraTextp.textContent = "Nome inválido!!!";
+        document.getElementById('nome2').focus();
         return false;
-        
+
     }
 
     else if (!expCPF.test(cpf)) {
 
-        alert("Favor preencher o campo CPF corretamente!");
-        document.getElementById('cpf').focus();
+        modal.showModal();
+        alteraTextp.textContent = "CPF inválido!!!";
+        document.getElementById('cpf2').focus();
+        return false;
+
+    }
+    else if (!expEmail.test(email)) {
+
+        modal.showModal();
+        alteraTextp.textContent = "E-mail inválido!!!";
+        document.getElementById('email2').focus();
         return false;
 
     }
 
     else if (!expTelefone.test(fone)) {
 
-        alert("Favor preencher o campo telefone corretamente!");
-        document.getElementById('fone').focus();
+        modal.showModal();
+        alteraTextp.textContent = "Telefone inválido!!!";
+        document.getElementById('fone2').focus();
         return false;
 
     }
 
     else if (!expCEP.test(cep)) {
 
-        alert("Favor preencher o campo CEP corretamente!");
-        document.getElementById('cep').focus();
+        modal.showModal();
+        alteraTextp.textContent = "CEP inválido!!!";
+        document.getElementById('cep2').focus();
         return false;
 
     }
 
-    else if (!expDTNas.test(dataNas)) {
+    // else if (!expDTNas.test(dataNas)) {
 
-        alert("Favor preencher o campo data de nascimento corretamente!");
-        document.getElementById('dataNas').focus();
-        return false;
+    //     modal.showModal();
+    //     alteraTextp.textContent = "Data de nascimento inválido!!!";
+    //     document.getElementById('dataNas2').focus();
+    //     return false;
 
-    }
+    // }
 
     else if (!expSenha.test(senha)) {
 
-        alert("Favor preencher o campo senha corretamente!");
-        document.getElementById('senha').focus();
+        modal.showModal();
+        alteraTextp.textContent = "Senha inválido!!!";
+        document.getElementById('senha2').focus();
         return false;
 
     }
 
-    else if (!expRg.test(rg)) {
+    // else if (!expRg.test(rg)) {
 
-        alert("Favor preencher o campo RG corretamente!");
-        document.getElementById('rg').focus();
-        return false;
+    //     modal.showModal();
+    //     alteraTextp.textContent = "RG inválido!!!";
+    //     document.getElementById('rg2').focus();
+    //     return false;
 
-    }
+    // }
 
     else {
-
-        alert("Dados enviados com sucesso!!!")
-
+        modal.showModal();
+        alteraTextp.textContent = "Dados enviados com sucesso!! ✅";
         return false;
-
     }
 
 }

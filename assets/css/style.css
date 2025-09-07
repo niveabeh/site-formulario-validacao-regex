@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(230deg, #2D1B41, #3E106D, #5000A1);
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    background-image: url('../img/banner-hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hero h1{
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.977);
+}
+.regex{
+    font-size: clamp(8rem, 12vw, 12rem);
+}
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+section #formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sem-regex, .com-regex{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.progresso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    padding: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: #ffffffb2;
+    border-top: 1px solid #ffffff73;
+    background-color: #2D1B41;
+}

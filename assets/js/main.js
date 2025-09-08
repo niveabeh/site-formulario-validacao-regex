@@ -126,3 +126,21 @@ function ValidarForm() {
     });
   });
 
+const sem = document.querySelector('.sem-regex');
+const com = document.querySelector('.com-regex');
+
+sem.addEventListener('mouseenter', () => {
+  com.style.filter = 'blur(4px)';
+});
+
+sem.addEventListener('mouseleave', () => {
+  com.style.filter = 'none';
+});
+
+com.addEventListener('mouseenter', () => {
+  sem.style.filter = 'blur(4px)';
+});
+
+com.addEventListener('mouseleave', () => {
+  sem.style.filter = 'none';
+});

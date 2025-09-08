@@ -1,126 +1,211 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(230deg, #2D1B41 50%, #3E106D , #5000A1);
-    color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: linear-gradient(230deg, #211330 50%, #22093b, #500998);
+  color: #fff;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
+
 .hero {
-    width: 100%;
-    background-image: url('../img/banner-hero.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/banner-hero.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.hero h1{
-    font-size: clamp(2.5rem, 10vw, 5rem);
-    color: #fff;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    text-shadow: 0 0 50px rgba(255, 255, 255, 0.977);
+
+section .formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
-.regex{
-    font-size: clamp(8rem, 12vw, 12rem);
-}
+
 h1 {
-    color: #fff;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    animation: flutuar 2s ease-in-out infinite;
-}
-.container-sessao-formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #fff;
-}
-section .formulario{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    border: 1px solid #fff;
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.4rem;
+  color: #fff;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.977);
+  animation: flutuar 2s ease-in-out infinite;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    padding: 20px;
-}
-fieldset{
-    padding: 40px;
-    background: rgba(153, 143, 212, 0.3);
-    backdrop-filter: blur(30px);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 0 10px rgba(198, 180, 245, 0.5);
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffffc7;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
 }
 
-input{
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-   
+fieldset {
+  margin-top: 20px;
+  border: none;
 }
-footer{
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    color: #ffffffb2;
-    border-top: 1px solid #ffffff73;
-    background-color: #2d1b414c;
-    backdrop-filter: blur(30px);
+
+.sem-regex,
+.com-regex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
-.seta-down{
-    animation: flutuar 2s ease-in-out infinite;
-    filter: drop-shadow(0 0 6px #fff);
+.sem-regex p,
+.com-regex p{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffffc7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.977);
 }
-.botao-subir {
-  z-index: 10;
-  display: none;
-  width: auto;
-  height: auto;
-  transition: transform 0.3s ease;
+
+form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(11, 3, 13, 0.371);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(30px);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.423);
+}
+
+label {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+}
+
+.btnsubmit {
+  width: 100%;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  color: #fff;
+  background-image: linear-gradient(130deg, #6714B6, #6F15FE, #B41BFF);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnsubmit:hover {
+  background: linear-gradient(130deg, #4c0d86, #360a7e, #56087d);
+  transform: translateY(-2px);
+}
+
+.btnreset {
+  width: 100%;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #ffffffae;
+  background: rgba(156, 154, 154, 0.43);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.btnreset:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  background: rgba(177, 175, 175, 0.527);
+}
+
+.container-btn-acoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.container-caixa-campos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.container-caixa-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+footer {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  color: #ffffffb2;
+  border-top: 1px solid #ffffff73;
+  background-color: #2d1b414c;
+  backdrop-filter: blur(30px);
+}
+
+.seta-down {
   animation: flutuar 2s ease-in-out infinite;
   filter: drop-shadow(0 0 6px #fff);
 }
 
-.botao-subir:hover {
-  transform: scale(1.1);
+.botao-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  display: none;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: flutuar 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #fff);
 }
+
 @keyframes flutuar {
   0% {
     transform: translateY(0);

@@ -8,7 +8,7 @@ html {
 }
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(230deg, #2D1B41, #3E106D, #5000A1);
+    background-image: linear-gradient(230deg, #2D1B41 50%, #3E106D , #5000A1);
     color: #fff;
 }
 
@@ -49,48 +49,47 @@ h1 {
     color: #fff;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    animation: flutuar 2s ease-in-out infinite;
 }
-section #formulario {
+.container-sessao-formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid #fff;
 }
 section .formulario{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    border: 1px solid #fff;
 }
-.sem-regex, .com-regex{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.progresso{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    width: 50%;
+    width: 30%;
     padding: 20px;
 }
+fieldset{
+    padding: 40px;
+    background: rgba(153, 143, 212, 0.3);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(198, 180, 245, 0.5);
+}
+
 input{
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
 }
 footer{
     width: 100%;
@@ -98,5 +97,43 @@ footer{
     text-align: center;
     color: #ffffffb2;
     border-top: 1px solid #ffffff73;
-    background-color: #2D1B41;
+    background-color: #2d1b414c;
+    backdrop-filter: blur(30px);
+}
+.seta-down{
+    animation: flutuar 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 6px #fff);
+}
+.botao-subir {
+  z-index: 10;
+  display: none;
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  animation: flutuar 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #fff);
+}
+
+.botao-subir:hover {
+  transform: scale(1.1);
+}
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(10px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

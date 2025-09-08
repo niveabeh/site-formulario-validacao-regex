@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
 
+
     <title>Document</title>
+    <title>Formulario com Regex</title>
+
 </head>
 
 <body>
+     <a href="#hero" id="btn-voltar" class="botao-subir">
+        <img src="assets/img/icone-arrow-top.svg" alt="Voltar ao topo">
+    </a>
     <section id="hero">
         <div class="hero">
             <h1>formulário com<br><span class="regex">regex</span></h1>
-            <a href="#formulario"><img src="assets/img/icone-arrow.svg" alt="botão seta"></a>
+            <a href="#formulario" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="botão seta"></a>
         </div>
     </section>
-    <section id="formulario">
+    <section id="formulario" class="container-sessao-formulario">
         <h2>Formulários</h2>
         <div class="formulario">
-            <div class="sem-regex">
-
                 <form id="sem-regex" action="#">
                     <fieldset>
                         <legend>sem regex</legend>
@@ -49,8 +53,8 @@
                         <button type="submit" class="submit">Finalizar Cadastro</button>
                     </fieldset>
                 </form>
-            </div>
-            <div class="com-regex">
+            
+           
 
                 <form id="com-regex" action="#" method="post" onsubmit="return ValidarForm()">
                     <fieldset>
@@ -90,7 +94,7 @@
                         </div>
                     </fieldset>
                 </form>
-            </div>
+            
         </div>
         <dialog>
             <div>Atenção!!</div>
@@ -105,5 +109,4 @@
     </footer>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

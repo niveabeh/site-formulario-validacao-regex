@@ -52,7 +52,6 @@ h1 {
   letter-spacing: 0.4rem;
   color: #fff;
   text-shadow: 0 0 50px rgba(255, 255, 255, 0.977);
-  animation: flutuar 2s ease-in-out infinite;
   margin-bottom: 15%;
   opacity: 0;
   animation: entrada 1s ease forwards;
@@ -203,8 +202,7 @@ footer {
   animation: flutuar 2s ease-in-out infinite;
   filter: drop-shadow(0 0 6px #fff);
   opacity: 0;
-  animation: entrada 1s ease forwards;
-  animation-delay: 1.2s;
+  animation: entrada 1s ease forwards, flutuar  2s ease-in-out 3s infinite;
 }
 
 .botao-subir {

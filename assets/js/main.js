@@ -152,7 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const explicacoes = {
     "/": "Delimitador de regex.",
-    "\\": "Escape (permite usar caracteres especiais como literais).",
     ".": "Qualquer caractere (exceto nova linha).",
     "*": "0 ou mais repetições.",
     "{}": "Quantidade exata ou intervalo de repetições.",
@@ -178,33 +177,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const inputCod = document.getElementById('testeCod');
   const spanCod = document.querySelector('.implementarCod');
-  const inputTexto = document.getElementById('testarCodigo');
-  const paragrafoMatch = document.getElementById('TextoTesteCod');
-
-  function testarRegex() {
-    let regexStr = inputCod.value;
-
-    if (regexStr.startsWith("/") && regexStr.endsWith("/")) {
-      regexStr = regexStr.slice(1, -1);
-    }
-
-    try {
-      const regex = new RegExp(String(regexStr));
-      const texto = inputTexto.value;
-      const match = regex.test(texto);
-
-      paragrafoMatch.textContent = match ? "✅ Corresponde!" : "❌ Não corresponde!";
-    } catch (e) {
-      paragrafoMatch.textContent = "⚠️ Regex inválida!";
-    }
-  }
 
   inputCod.addEventListener('input', () => {
     spanCod.textContent = inputCod.value;
-  });
-
-  inputTexto.addEventListener('input', () => {
-    testarRegex();
   });
 
 

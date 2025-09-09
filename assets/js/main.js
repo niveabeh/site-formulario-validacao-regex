@@ -23,19 +23,18 @@ function ValidarForm() {
   const modal = document.querySelector('dialog');
   const fecharModal = document.getElementById('fechar');
   let alteraTextp = document.getElementById('texto-aviso');
-
+  
+    modal.showModal();
   if (!expNome.test(nome2)) {
 
-    modal.showModal();
     alteraTextp.textContent = "Nome inválido!!!";
     document.getElementById('nome2').focus();
+    fecharModal.close();
     return false;
-
   }
 
   else if (!expCPF.test(cpf)) {
 
-    modal.showModal();
     alteraTextp.textContent = "CPF inválido!!!";
     document.getElementById('cpf2').focus();
     return false;
@@ -43,7 +42,6 @@ function ValidarForm() {
   }
   else if (!expEmail.test(email)) {
 
-    modal.showModal();
     alteraTextp.textContent = "E-mail inválido!!!";
     document.getElementById('email2').focus();
     return false;
@@ -52,7 +50,6 @@ function ValidarForm() {
 
   else if (!expTelefone.test(fone)) {
 
-    modal.showModal();
     alteraTextp.textContent = "Telefone inválido!!!";
     document.getElementById('fone2').focus();
     return false;
@@ -61,7 +58,6 @@ function ValidarForm() {
 
   else if (!expCEP.test(cep)) {
 
-    modal.showModal();
     alteraTextp.textContent = "CEP inválido!!!";
     document.getElementById('cep2').focus();
     return false;
@@ -70,7 +66,6 @@ function ValidarForm() {
 
   else if (!expDTNas.test(dataNas)) {
 
-    modal.showModal();
     alteraTextp.textContent = "Data de nascimento inválido!!!";
     document.getElementById('dataNas2').focus();
     return false;
@@ -79,7 +74,6 @@ function ValidarForm() {
 
   else if (!expSenha.test(senha)) {
 
-    modal.showModal();
     alteraTextp.textContent = "Senha inválido!!!";
     document.getElementById('senha2').focus();
     return false;
@@ -88,13 +82,11 @@ function ValidarForm() {
 
   else if (!expRg.test(rg)) {
 
-    modal.showModal();
     alteraTextp.textContent = "RG inválido!!!";
     document.getElementById('rg2').focus();
     return false;
 
   } else if (!expUsuario.test(usuario)) {
-    modal.showModal();
     alteraTextp.textContent = "Nome de usuário inválido!!!";
     document.getElementById('usuario2').focus();
     return false;
@@ -102,7 +94,6 @@ function ValidarForm() {
 
   else {
 
-    modal.showModal();
     alteraTextp.textContent = "Dados enviados com sucesso!! ✅";
     return false;
 

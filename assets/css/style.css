@@ -30,6 +30,46 @@ nav {
   border: 1px solid rgba(245, 242, 242, 0.088);
 }
 
+dialog {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 50%;
+  border: none;
+  outline: 1px solid #ffffff4b;
+  border-radius: 20px;
+  background-color: #21043da4;
+  backdrop-filter: blur(30px);
+  color: #fff;
+}
+
+dialog:active {
+  position: fixed;
+}
+
+.caixa-dialog {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btnDialog {
+  padding: 12px 60px;
+  border: 20px;
+  color: #fff;
+  background-color: #5a08ac;
+  border-radius: 20px;
+}
+
+.btnDialog:active {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.363);
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -59,13 +99,16 @@ section {
   width: 100%;
   min-height: 100vh;
 }
-.secao-container-historia1{
- background: linear-gradient(252deg, #150425 23.9%, #1E0635 60.84%, #22083C 90.98%);
+
+.secao-container-historia1 {
+  background: linear-gradient(252deg, #150425 23.9%, #1E0635 60.84%, #22083C 90.98%);
 }
-.secao-container-historia2{
+
+.secao-container-historia2 {
   background: linear-gradient(107deg, #21073B 36.49%, #1A052F 53.31%, #140325 89.38%);
 }
-.container-vidro{
+
+.container-vidro {
   border: 1px solid rgba(255, 255, 255, 0.158);
   width: 50%;
   height: 100%;
@@ -74,20 +117,22 @@ section {
   background-color: rgba(22, 3, 33, 0.36);
   backdrop-filter: blur(30px);
 }
-.container-vidro h2{
+
+.container-vidro h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.container-vidro p{
+.container-vidro p {
   text-align: justify;
   color: #fff;
   letter-spacing: 1px;
   line-height: 1.5;
   font-size: 1.1rem;
 }
-.container-caracter{
+
+.container-caracter {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -95,12 +140,17 @@ section {
   gap: 20px;
   width: 50%;
   height: 100%;
- 
+
 }
-.secao-container-caracter{
+
+.secao-container-caracter {
   background: linear-gradient(107deg, #190E24 36.49%, #130421 53.31%, #0A0113 89.38%);
 }
-.secao-container-historia1, .secao-container-historia2, .secao-container-caracter, .secao-container-testeCod{
+
+.secao-container-historia1,
+.secao-container-historia2,
+.secao-container-caracter,
+.secao-container-testeCod {
   display: flex;
   flex-direction: column;
 }
@@ -206,7 +256,8 @@ fieldset {
   margin-top: 20px;
   border: none;
 }
-.container-codigo-teste{
+
+.container-codigo-teste {
   border: 1px solid rgba(211, 205, 205, 0.178);
   background: rgb(32, 30, 30);
   box-shadow: 0 5px 12px rgba(226, 226, 226, 0.089);
@@ -216,13 +267,16 @@ fieldset {
   padding: 40px;
   border-radius: 20px;
 }
-.container-teste-input label{
+
+.container-teste-input label {
   color: rgba(223, 217, 217, 0.466);
 }
-.container-teste-input p{
+
+.container-teste-input p {
   font-size: 3rem;
 }
-.container-teste-input input{
+
+.container-teste-input input {
   border: 1px solid rgba(150, 147, 147, 0.36);
   color: rgba(202, 13, 13, 0.747);
   font-size: 1rem;
@@ -230,20 +284,28 @@ fieldset {
   width: 70%;
   background: rgb(32, 30, 30);
 }
-.textVariavel, .textConst, .textIgual, .implementarCod{
+
+.textVariavel,
+.textConst,
+.textIgual,
+.implementarCod {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.textVariavel{
+
+.textVariavel {
   color: rgb(88, 91, 245);
 }
-.textConst{
+
+.textConst {
   color: rgba(0, 153, 255, 0.76);
 }
-.textIgual{
+
+.textIgual {
   color: rgba(247, 247, 248, 0.568);
 }
-.implementarCod{
+
+.implementarCod {
   color: rgba(170, 13, 13, 0.884);
 }
 
@@ -255,7 +317,7 @@ fieldset {
   height: 50px;
   border-radius: 6px;
   background: linear-gradient(145deg, #7300ff99, #4a2c70);
-  box-shadow:2px 2px 6px rgba(0, 0, 0, 0.6),inset -2px -2px 4px rgba(255, 255, 255, 0.2),inset 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.13);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), inset -2px -2px 4px rgba(255, 255, 255, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.13);
   border: 1px solid #2e1c40;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -264,11 +326,13 @@ fieldset {
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
-.tecla:hover{
+
+.tecla:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.486);
   transition: all 0.3s ease-in-out;
 }
+
 .tecla:active {
   box-shadow:
     inset 2px 2px 6px rgba(0, 0, 0, 0.7),

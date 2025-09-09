@@ -16,12 +16,99 @@
     <a href="#hero" id="btn-voltar" class="botao-subir">
         <img src="assets/img/icone-arrow-top.svg" alt="Voltar ao topo">
     </a>
-    <section id="hero">
-        <div class="hero">
-            <h1>formulário com<br><span class="regex">regex</span></h1>
-            <a href="#formulario" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="botão seta"></a>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Caracter</a></li>
+            <li><a href="#">Exemplo</a></li>
+        </ul>
+    </nav>
+    <section id="hero" class="hero">
+        <div class="container-caixa-lado">
+            <div class="container-esquerdo">
+                <container class="text-hero">
+                    <p>Validação de Formulário <br>com</p>
+                    <h1>Regex</h1>
+                </container>
+            </div>
+            <div class="container-direito">
+                <img class="icone-caracter" src="assets/img/icon-caracter.svg" alt="Icone de Caracter">
+                <img class="icone-cloud" src="assets/img/icon-cloud.svg" alt=" Icone de Nuvem">
+                <img class="icone-cod" src="assets/img/icon-cod.svg" alt="Icone de Código">
+                <img class="icone-pc" src="assets/img/icon-pc.svg" alt="Icone de Computador">
+            </div>
         </div>
+        <a href="#formulario" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="Seta para baixo"></a>
     </section>
+    <section id="historia" class="secao-container-historia1">
+        <div class="container-caixa-lado">
+            <div class="container-esquerdo">
+                <img src="assets/img/gatinho-esquerdo.svg" alt="Gatinho Animado em 3D">
+            </div>
+            <div class="container-direito">
+                <div class="container-vidro">
+                    <h2>Titulo da seção</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaestio. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Quisquam, quaestio Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quaestio</p>
+                </div>
+            </div>
+        </div>
+        <a href="#formulario" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="Seta para baixo"></a>
+    </section>
+    <section class="secao-container-historia2">
+        <div class="container-caixa-lado">
+            <div class="container-esquerdo">
+                <div class="container-vidro">
+                    <h2>Titulo da seção</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaestio. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Quisquam, quaestio Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quaestio</p>
+                </div>
+            </div>
+            <div class="container-direito">
+                <img src="assets/img/gatinho-direito.svg" alt="Gatinho Animado em 3D">
+            </div>
+        </div>
+        <a href="#formulario" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="Seta para baixo"></a>
+    </section>
+    <section id="caracter" class="secao-container-caracter">
+        <div class="container-caixa-lado">
+            <div class="container-esquerdo">
+                <div class="container-vidro">
+                    <h2>Titulo da seção</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaestio. Lorem ipsum dolor
+                        sit
+                        amet consectetur adipisicing elit. Quisquam, quaestio Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, quaestio</p>
+                </div>
+            </div>
+            <div class="container-direito">
+                <div class="container-caracter">
+                    <div class="tecla">/</div>
+                    <div class="tecla">\</div>
+                    <div class="tecla">\</div>
+                    <div class="tecla">.</div>
+                    <div class="tecla">*</div>
+                    <div class="tecla">{}</div>
+                    <div class="tecla">()</div>
+                    <div class="tecla">[]</div>
+                    <div class="tecla">?</div>
+                    <div class="tecla">+</div>
+                    <div class="tecla">^</div>
+                    <div class="tecla">$</div>
+                    <div class="tecla">|</div>
+                    <div class="tecla">i</div>
+                    <div class="tecla">g</div>
+                    <div class="tecla">m</div>
+                    <div class="tecla">s</div>
+                </div>
+            </div>
+        </div>
+        <a href="#formulario" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="Seta para baixo"></a>
+    </section>
+
     <section id="formulario">
         <div class="formulario">
             <div class="sem-regex">
@@ -75,8 +162,7 @@
                         <div class="container-caixa-campos">
                             <div class="container-caixa-input">
                                 <label for="usuario">Usuário</label>
-                                <input type="text" id="usuario" name="usuario" required
-                                    placeholder="Seunome123">
+                                <input type="text" id="usuario" name="usuario" required placeholder="Seunome123">
                             </div>
                             <div class="container-caixa-input">
                                 <label for="senha">Senha</label>
@@ -145,8 +231,7 @@
                         <div class="container-caixa-campos">
                             <div class="container-caixa-input">
                                 <label for="usuario2">Usuário</label>
-                                <input type="text" id="usuario2" name="usuario" required
-                                    placeholder="Seunome123">
+                                <input type="text" id="usuario2" name="usuario" required placeholder="Seunome123">
                             </div>
                             <div class="container-caixa-input">
                                 <label for="senha2">Senha</label>
@@ -174,6 +259,7 @@
     <footer>
         <p>©copyrigth ADS2025. Todos os direitos reservados</p>
     </footer>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

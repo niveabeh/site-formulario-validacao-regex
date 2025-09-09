@@ -96,18 +96,18 @@
             <div class="com-regex">
 
                 <p>Com Regex</p>
-                <form id="com-regex" action="#">
+                <form id="com-regex" action="#" method="post" onsubmit="return ValidarForm()">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
                         <div class="container-caixa-campos">
                             <div class="container-caixa-input">
-                                <label for="nome1">Nome Completo</label>
-                                <input type="text" id="nome1" name="nome" required
+                                <label for="nome2">Nome Completo</label>
+                                <input type="text" id="nome2" name="nome" required
                                     placeholder="Digite seu nome completo">
                             </div>
                             <div class="container-caixa-input">
-                                <label for="cpf1">CPF</label>
-                                <input type="text" id="cpf1" name="cpf" required placeholder="000.000.000-00">
+                                <label for="cpf2">CPF</label>
+                                <input type="text" id="cpf2" name="cpf" required placeholder="000.000.000-00">
                             </div>
                         </div>
                         <div class="container-caixa-campos">
@@ -116,8 +116,8 @@
                                 <input type="text" id="rg2" name="rg" required placeholder="0-000-000">
                             </div>
                             <div class="container-caixa-input">
-                                <label for="data_nasc1">Data de Nascimento</label>
-                                <input type="text" id="data_nasc1" name="data_nasc" required placeholder="DD/MM/AAAA">
+                                <label for="data_nasc2">Data de Nascimento</label>
+                                <input type="text" id="data_nasc2" name="data_nasc" required placeholder="DD/MM/AAAA">
                             </div>
                         </div>
                     </fieldset>
@@ -126,17 +126,17 @@
                         <legend>Contato</legend>
                         <div class="container-caixa-campos">
                             <div class="container-caixa-input">
-                                <label for="email1">E-mail</label>
-                                <input type="email" id="email1" name="email1" required placeholder="seu@email.com">
+                                <label for="email2">E-mail</label>
+                                <input type="email" id="email2" name="email" required placeholder="seu@email.com">
                             </div>
                             <div class="container-caixa-input">
-                                <label for="telefone1">Telefone</label>
-                                <input type="tel" id="telefone1" name="telefone" required placeholder="(99) 99999-9999">
+                                <label for="fone2">Telefone</label>
+                                <input type="tel" id="fone2" name="telefone" required placeholder="(99) 99999-9999">
                             </div>
                         </div>
                         <div class="container-caixa-input">
-                            <label for="cep">CEP</label>
-                            <input type="text" id="cep" name="cep" required placeholder="00000-000">
+                            <label for="cep2">CEP</label>
+                            <input type="text" id="cep2" name="cep" required placeholder="00000-000">
                         </div>
                     </fieldset>
 
@@ -144,13 +144,13 @@
                         <legend>Conta de Acesso</legend>
                         <div class="container-caixa-campos">
                             <div class="container-caixa-input">
-                                <label for="usuario">Usuário</label>
-                                <input type="text" id="usuario" name="usuario" required
+                                <label for="usuario2">Usuário</label>
+                                <input type="text" id="usuario2" name="usuario" required
                                     placeholder="Seunome123">
                             </div>
                             <div class="container-caixa-input">
-                                <label for="senha">Senha</label>
-                                <input type="password" id="senha" name="senha" required placeholder="Crie uma senha">
+                                <label for="senha2">Senha</label>
+                                <input type="password" id="senha2" name="senha" required placeholder="Crie uma senha">
                             </div>
                         </div>
                     </fieldset>

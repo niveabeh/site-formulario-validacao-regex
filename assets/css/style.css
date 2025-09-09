@@ -219,8 +219,16 @@ fieldset {
 .container-teste-input label{
   color: rgba(223, 217, 217, 0.466);
 }
+.container-teste-input p{
+  font-size: 3rem;
+}
 .container-teste-input input{
-  
+  border: 1px solid rgba(150, 147, 147, 0.36);
+  color: rgba(202, 13, 13, 0.747);
+  font-size: 1rem;
+  padding: 20px;
+  width: 70%;
+  background: rgb(32, 30, 30);
 }
 .textVariavel, .textConst, .textIgual, .implementarCod{
   font-size: 1.5rem;

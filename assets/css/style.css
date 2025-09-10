@@ -43,7 +43,7 @@ nav {
   backdrop-filter: blur(30px);
   border-radius: 12px;
   z-index: 1;
-  border: 1px solid rgba(245, 242, 242, 0.088);
+  border: 1px solid rgba(245, 242, 242, 0.205);
 }
 
 dialog {
@@ -165,15 +165,37 @@ section {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.158);
-  width: 550px;
-  height: 100px;
+  width: 35vw; 
+  height: 300px;
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(107, 70, 129, 0.26);
   backdrop-filter: blur(30px);
-  
 }
+.container-caracter-funcao{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.caixa-caracter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff1e;
+  width: 100%;
+  gap: 12px;
+  padding: 20px;
+}
+.caixa-caracter p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ffffffdc;
 
+}
 .container-esquerdo h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -232,7 +254,7 @@ section {
 
 .icone-caracter {
   top: 10%;
-  right: 35%;
+  right: 30%;
 }
 
 .icone-cloud {
@@ -242,12 +264,12 @@ section {
 
 .icone-cod {
   bottom: 20%;
-  right: 10%;
+  right: 5%;
 }
 
 .icone-pc {
   bottom: 40%;
-  right: 39%;
+  right: 37%;
 }
 
 .hero {
@@ -279,6 +301,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 50%;
+  flex-wrap: wrap;
 }
 
 .text-hero p {
@@ -407,8 +430,9 @@ fieldset {
   font-size: 1rem;
   color: white;
   text-align: center;
-  width: 60px;
-  height: 50px;
+  width: auto;
+  padding: 0 20px;
+  height: 60px;
   border-radius: 6px;
   background: linear-gradient(145deg, #7300ff99, #4a2c70);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), inset -2px -2px 4px rgba(255, 255, 255, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.13);
@@ -556,6 +580,10 @@ label {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 30px;
   text-align: center;
@@ -563,6 +591,11 @@ footer {
   border-top: 1px solid #ffffff73;
   background-color: #2d1b414c;
   backdrop-filter: blur(30px);
+  gap: 40px;
+}
+footer p{
+  border-top: 1px solid #ffffff36;
+  padding: 20px 0 0 0;
 }
 
 .seta-down {
@@ -585,6 +618,38 @@ footer {
   transition: transform 0.3s ease;
   animation: flutuar 2s ease-in-out infinite;
   filter: drop-shadow(0 0 6px #fff);
+}
+.caixa-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  gap: 40px;
+}
+.caixa-refe, .caixa-sites-regex{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  text-align: center;
+}
+.caixa-refe a, .caixa-sites-regex a{
+  text-decoration: none;
+  color: #ffffff8e;
+}
+.caixa-refe a:hover, .caixa-sites-regex a:hover{
+  text-decoration: none;
+  color: #ffffff;
+  transform: scale(1.2);
+  transition: all .3s ease;
+}
+.caixa-refe p, .caixa-sites-regex p{
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  color: #ffffffd8;
 }
 
 @keyframes flutuar {

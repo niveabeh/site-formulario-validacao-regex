@@ -7,8 +7,8 @@ function ValidarForm() {
   const expEmail = /^[A-Za-z0-9_\-.]{2,}@(gmail|outlook|hotmail)\.com(\.br)?$/;
   const expTelefone = /^[(][0-9]{2}[)][ ][0-9]{4,5}[-][0-9]{4}$/;
   const expCEP = /^[0-9]{5}-[0-9]{3}$/;
-  const expUsuario = /^[A-Za-z]{3,}([_\-A-Za-z0-9]{1,})?$/;
-  const expSenha = /^[A-Za-z]{1,}[0-9]{1,}[.|\/@*\-+_]{1,}$/;
+  // const expUsuario = /^[A-Za-z]{3,}([_\-A-Za-z0-9]{1,})?$/;
+  // const expSenha = /^[A-Za-z]{1,}[0-9]{1,}[.|\/@*\-+_]{1,}$/;
 
   let nome2 = document.getElementById('nomeCompleto').value;
   let cpf = document.getElementById('cadastroPessoaFisica').value;
@@ -17,8 +17,8 @@ function ValidarForm() {
   let email = document.getElementById('EmailPessoal').value;
   let fone = document.getElementById('Telefone').value;
   let cep = document.getElementById('CodigoEnderecamento').value;
-  let usuario = document.getElementById('user').value;
-  let senha = document.getElementById('palavraChave').value;
+  // let usuario = document.getElementById('user').value;
+  // let senha = document.getElementById('palavraChave').value;
 
   let alteraTextp = document.getElementById('texto-aviso');
 
@@ -91,21 +91,21 @@ function ValidarForm() {
 
   }
 
-  else if (!expUsuario.test(usuario)) {
-    alteraTextp.textContent = "Nome de usuário inválido!!!";
-    document.getElementById('user').focus();
-    modal.showModal();
-    return false;
-  }
+  // else if (!expUsuario.test(usuario)) {
+  //   alteraTextp.textContent = "Nome de usuário inválido!!!";
+  //   document.getElementById('user').focus();
+  //   modal.showModal();
+  //   return false;
+  // }
 
-  else if (!expSenha.test(senha)) {
+  // else if (!expSenha.test(senha)) {
 
-    alteraTextp.textContent = "Senha inválido!!!";
-    document.getElementById('palavraChave').focus();
-    modal.showModal();
-    return false;
+  //   alteraTextp.textContent = "Senha inválido!!!";
+  //   document.getElementById('palavraChave').focus();
+  //   modal.showModal();
+  //   return false;
 
-  }
+  // }
   else {
     abrirModal();
     alteraTextp.textContent = "Dados enviados com sucesso!! ✅";
@@ -129,24 +129,6 @@ btnVoltar.addEventListener('click', (e) => {
   });
 });
 
-const sem = document.querySelector('.sem-regex');
-const com = document.querySelector('.com-regex');
-
-sem.addEventListener('mouseenter', () => {
-  com.style.filter = 'blur(4px)';
-});
-
-sem.addEventListener('mouseleave', () => {
-  com.style.filter = 'none';
-});
-
-com.addEventListener('mouseenter', () => {
-  sem.style.filter = 'blur(4px)';
-});
-
-com.addEventListener('mouseleave', () => {
-  sem.style.filter = 'none';
-});
 
 
 

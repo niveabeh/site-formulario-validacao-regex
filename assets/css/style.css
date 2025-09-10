@@ -34,7 +34,7 @@ nav {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: auto;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +236,8 @@ section {
 .secao-container-historia1,
 .secao-container-historia2,
 .secao-container-caracter,
-.secao-container-testeCod {
+.secao-container-testeCod,
+.secao-form-invalido {
   display: flex;
   flex-direction: column;
 }
@@ -458,7 +459,6 @@ fieldset {
   transform: translateY(2px);
 }
 
-.sem-regex,
 .com-regex {
   width: 100%;
   height: 100%;
@@ -467,6 +467,15 @@ fieldset {
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+}
+.sem-regex{
+  width: 30%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 .sem-regex p,
@@ -478,16 +487,6 @@ fieldset {
   letter-spacing: 1.5px;
   text-shadow: 0 0 50px rgba(255, 255, 255, 0.977);
 
-}
-
-.sem-regex:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.com-regex:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out
 }
 
 form {

@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const explicacoes = {
     "/": "Delimitador de regex.",
     ".": "Qualquer caractere (exceto nova linha).",
-    "*": "0 ou mais repetições.",
+    "*": "0 ou todas as quantidades existente",
     "{}": "Quantidade exata ou intervalo de repetições.",
     "()": "Agrupamento ou captura.",
     "[]": "Classe de caracteres (um dos listados).",
@@ -172,7 +172,16 @@ document.addEventListener("DOMContentLoaded", () => {
     "i": "Flag: case insensitive (ignora maiúsculas/minúsculas).",
     "g": "Flag: global (pega todas as ocorrências).",
     "m": "Flag: multiline (trata início/fim por linha).",
-    "s": "Flag: dotall (faz '.' incluir quebras de linha)."
+    "s": "Flag: dotall (faz '.' incluir quebras de linha).",
+    "match()": "Retorna uma array com os resultados",
+    "matchAll()": "Retorna um Iterador de resultados",
+    "replace()": "Busca e substitui o primeiro valor por novo valor  ",
+    "replaceAll()": "Busca e substitui todos os valores e substitui pelo valor repassado",
+    "search()": "Executa uma busca por uma correspondência entre uma expressão regular e esta string, retornando o índice da primeira correspondência na string.",
+    "split()": "Pega um padrão e divide essa string em uma lista ordenada de substrings, procurando pelo padrão, coloca essas substrings em uma matriz e retorna a matriz.",
+    "exec()": "O método executa a busca por um padrão em uma determinada string. Retorna um array, ou null.",
+    "test()": "O método executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna true ou false.",
+    "toString()": "O método retorna uma string que representa uma expressão regular.",
   };
 
   teclas.forEach(tecla => {

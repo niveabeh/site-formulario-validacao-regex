@@ -12,6 +12,21 @@ body {
   font-family: 'Courier New', Courier, monospace;
   background-image: linear-gradient(230deg, #211330 50%, #22093b, #500998);
   color: #fff;
+  scrollbar-color: purple blue; 
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0113;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e35a7; 
+  border-radius: 100px;
 }
 
 nav {

@@ -17,7 +17,8 @@ body {
 nav {
   position: fixed;
   top: 10px;
-  left: 35%;
+  left: 50%;
+  transform: translateX(-50%);
   width: auto;
   display: flex;
   justify-content: center;
@@ -46,6 +47,9 @@ dialog {
 
 dialog:active {
   position: fixed;
+}
+.container-direito .icone-icon{
+  width: 13vw ;
 }
 
 .caixa-dialog {
@@ -154,6 +158,9 @@ section {
   display: flex;
   flex-direction: column;
 }
+.secao-container-testeCod{
+  background-image: linear-gradient(130deg,  #190E24 36.49%, #130421 53.31%, #0A0113 89.38%);
+}
 
 .icone-caracter,
 .icone-cloud,
@@ -216,20 +223,33 @@ section {
 .text-hero p {
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 1.5rem;
   letter-spacing: 0.4rem;
-  color: #fff;
+  color: #ffffff6c;
+
+}
+.container-exemplo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  gap: 40px;
+  height: 90vh;
+}
+.container-exemplo h2{
+  font-size: 3vw;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.541);
 
 }
 
 .text-hero h1 {
-  font-size: 14rem;
+  font-size: 13vw;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 1.5rem;
   letter-spacing: 0.4rem;
   color: #fff;
   text-shadow: 0 0 50px rgba(255, 255, 255, 0.5)
@@ -262,23 +282,35 @@ fieldset {
   background: rgb(32, 30, 30);
   box-shadow: 0 5px 12px rgba(226, 226, 226, 0.089);
   backdrop-filter: blur(30px);
-  height: 40vh;
+  height: 20vh;
   width: 80%;
   padding: 40px;
   border-radius: 20px;
+  overflow: hidden;
 }
 
-.container-teste-input label {
-  color: rgba(223, 217, 217, 0.466);
+.container-teste-input label {  
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(223, 217, 217, 0.877);  
+  margin-bottom: 8px;
+  
 }
 
 .container-teste-input p {
   font-size: 3rem;
 }
+.container-teste-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
 
 .container-teste-input input {
   border: 1px solid rgba(150, 147, 147, 0.36);
-  color: rgba(202, 13, 13, 0.747);
+  color: rgba(240, 42, 42, 0.986);
   font-size: 1rem;
   padding: 20px;
   width: 70%;
@@ -291,22 +323,23 @@ fieldset {
 .implementarCod {
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 .textVariavel {
-  color: rgb(88, 91, 245);
+  color: rgb(98, 101, 247);
 }
 
 .textConst {
-  color: rgba(0, 153, 255, 0.76);
+  color: rgba(12, 157, 253, 0.76);
 }
 
 .textIgual {
-  color: rgba(247, 247, 248, 0.568);
+  color: rgba(247, 247, 248, 0.63);
 }
 
 .implementarCod {
-  color: rgba(170, 13, 13, 0.884);
+  color: rgba(240, 42, 42, 0.986);
 }
 
 .tecla {

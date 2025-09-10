@@ -25,6 +25,10 @@ function ValidarForm() {
   let alteraTextp = document.getElementById('texto-aviso');
   
     modal.showModal();
+
+  fecharModal.onclick(()=>{
+
+  });
   if (!expNome.test(nome2)) {
 
     alteraTextp.textContent = "Nome inválido!!!";

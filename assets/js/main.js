@@ -4,11 +4,11 @@ function ValidarForm() {
   const expCPF = /^([0-9]{3}[.]){2}[0-9]{3}[-][0-9]{2}$/;
   const expRg = /^[0-9]{1}[.][0-9]{3}[.][0-9]{3}$/;
   const expDTNas = /(0[1-9]|[12][0-9]|[3][01])\/(0[1-9]|1[0-2])\/[0-9]{4}$/;
-  const expEmail = /^[A-z0-9]{2,}@(gmail|estudante|outlook|hotmail)(\.com|sesisenai)(\.br)?$/;
+  const expEmail = /^[A-Za-z0-9_\-.]{2,}@(gmail|outlook|hotmail)\.com(\.br)?$/;
   const expTelefone = /^[(][0-9]{2}[)][ ][0-9]{4,5}[-][0-9]{4}$/;
-  const expCEP = /^[0-9]{5}[-][0-9]{3}$/;
-  const expUsuario = /^[A-Za-z]{3,}([_-][A-Za-z0-9]{1,})?$/;
-  const expSenha = /^[A-Za-z0-9]{4,}[.|\/@*\-+_]{1,}([A-Za-z0-9]{1,})?$/;
+  const expCEP = /^[0-9]{5}-[0-9]{3}$/;
+  const expUsuario = /^[A-Za-z]{3,}([_\-A-Za-z0-9]{1,})?$/;
+  const expSenha = /^[A-Za-z]{1,}[0-9]{1,}[.|\/@*\-+_]{1,}$/;
 
   let nome2 = document.getElementById('nomeCompleto').value;
   let cpf = document.getElementById('cadastroPessoaFisica').value;

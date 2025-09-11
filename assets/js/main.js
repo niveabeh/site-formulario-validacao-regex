@@ -145,31 +145,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const textoTecla = document.getElementById('paragrafoExplica');
 
   const explicacoes = {
-    "/": "Delimitador de regex.",
-    ".": "Qualquer caractere (exceto nova linha).",
-    "*": "0 ou todas as quantidades existente",
-    "{}": "Quantidade exata ou intervalo de repetições.",
-    "()": "Agrupamento ou captura.",
-    "[]": "Classe de caracteres (um dos listados).",
-    "?": "0 ou 1 ocorrência (opcional).",
-    "+": "1 ou mais repetições.",
-    "^": "Início da string.",
-    "$": "Fim da string.",
-    "|": "OU (alternativa).",
-    "i": "Flag: case insensitive (ignora maiúsculas/minúsculas).",
-    "g": "Flag: global (pega todas as ocorrências).",
-    "m": "Flag: multiline (trata início/fim por linha).",
-    "s": "Flag: dotall (faz '.' incluir quebras de linha).",
-    "match()": "Retorna uma array com os resultados",
-    "matchAll()": "Retorna um Iterador de resultados",
-    "replace()": "Busca e substitui o primeiro valor por novo valor  ",
-    "replaceAll()": "Busca e substitui todos os valores e substitui pelo valor repassado",
-    "search()": "Executa uma busca por uma correspondência entre uma expressão regular e esta string, retornando o índice da primeira correspondência na string.",
-    "split()": "Pega um padrão e divide essa string em uma lista ordenada de substrings, procurando pelo padrão, coloca essas substrings em uma matriz e retorna a matriz.",
-    "exec()": "O método executa a busca por um padrão em uma determinada string. Retorna um array, ou null.",
-    "test()": "O método executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna true ou false.",
-    "toString()": "O método retorna uma string que representa uma expressão regular.",
+    "/": "Delimitador da regex, é como a cerca que marca onde começa e termina a expressão. Exemplo: /hello/ aceita a palavra 'hello'.",
+    ".": "Qualquer caractere, menos a quebra de linha, tipo um curinga que aceita quase tudo! Exemplo: /b.t/ aceita 'bat', 'bit', 'but'.",
+    "*": "Zero ou mais vezes, pode não aparecer ou aparecer várias vezes. Exemplo: /ho*/ aceita 'h', 'ho', 'hoo', 'hooo'...",
+    "{}": "Quantas vezes algo deve aparecer, exato ou intervalo. Exemplo: /a{2}/ aceita 'aa'; /a{1,3}/ aceita 'a', 'aa' ou 'aaa'.",
+    "()": "Agrupa partes ou captura para usar depois. Exemplo: /(ha)+/ aceita 'ha', 'hahaha', 'hahahaha', etc.",
+    "[]": "Lista de caracteres que podem aparecer, tipo escolher um deles. Exemplo: /[xyz]/ aceita 'x', 'y' ou 'z'; /[3-5]/ aceita '3', '4' ou '5'.",
+    "?": "Zero ou uma vez, algo opcional. Exemplo: /colou?r/ aceita 'color' e 'colour'.",
+    "+": "Uma ou mais vezes, tem que ter pelo menos uma. Exemplo: /go+/ aceita 'go', 'goo', 'gooo', etc.",
+    "^": "Começo da string. Dentro de colchetes [^] vira negação. Exemplo: /^Hey/ aceita só se começar com 'Hey'; /[^aeiou]/ aceita qualquer caractere que não seja vogal.",
+    "$": "Fim da string, garante que termine ali. Exemplo: /end$/ aceita textos que terminam com 'end'.",
+    "|": "OU, tipo uma escolha entre opções. Exemplo: /sim|não/ aceita 'sim' ou 'não'.",
+    "i": "Flag que ignora maiúsculas e minúsculas. Exemplo: /java/i aceita 'Java', 'JAVA' ou 'java'.",
+    "g": "Flag que busca todas as ocorrências no texto, não só a primeira.",
+    "m": "Flag que faz início (^) e fim ($) funcionarem em cada linha, não só no texto inteiro.",
+    "s": "Flag que faz o ponto (.) também pegar quebras de linha.",
   };
+
+
+
+
 
   teclas.forEach(tecla => {
     tecla.addEventListener("click", () => {

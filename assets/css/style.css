@@ -1,4 +1,4 @@
-* {
+hidden* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,6 +14,7 @@ body {
   color: #fff;
   scrollbar-color: purple blue; 
   scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -208,7 +209,19 @@ section {
   color: #fff;
   font-size:35px;
 }
+ .pri-cod,
+  .seg-cod {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
 
+  .pri-cod:hover,
+  .seg-cod:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #222222;
+    padding: 12px;
+  }
 .container-direito h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -576,7 +589,7 @@ footer {
   text-align: center;
   color: #ffffffb2;
   border-top: 1px solid #ffffff73;
-  background-color: #2d1b414c;
+  background-color: #160b2399;
   backdrop-filter: blur(30px);
   gap: 40px;
 }

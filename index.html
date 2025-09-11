@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 
-    <title>Document</title>
+    <title>Expressões Regulares</title>
     <title>Formulario com Regex</title>
 
 </head>
@@ -159,19 +159,22 @@
             </div>
             <div class="container-direito">
                 <div class="exemplo-regex">
-                        <p>const expNome =<span class="cod-vermelho"> /^[A-Za-zÁ-ü]{3,}([ ][A-Za-zÁ-ü]{2,})+$/</span>;</p>
+                        <p>const expNome =<span class="cod-vermelho"> /^<span class="pri-cod">[A-Za-zÁ-ü]{3,}</span><span class="seg-cod">([ ][A-Za-zÁ-ü]{2,})+$/</span>;</p>
                     </div>
+                    <p style="color: rgba(255, 255, 255, 0.363);" id="paragrafoExplica">
+                        Clique no caractere desejado para saber a sua função.
+                    </p> 
                 <div class="container-caracter">
                     <div class="tecla">/</div>
-                    <div class="tecla">.</div>
-                    <div class="tecla">*</div>
-                    <div class="tecla">+</div>
+                    <div class="tecla">^</div>
+                    <div class="tecla">[]</div>
                     <div class="tecla">{}</div>
                     <div class="tecla">()</div>
-                    <div class="tecla">[]</div>
-                    <div class="tecla">?</div>
-                    <div class="tecla">^</div>
+                    <div class="tecla">+</div>
                     <div class="tecla">$</div>
+                    <div class="tecla">.</div>
+                    <div class="tecla">*</div>
+                    <div class="tecla">?</div>
                     <div class="tecla">|</div>
                     <div class="tecla">i</div>
                     <div class="tecla">g</div>
@@ -281,13 +284,14 @@
         <div class="caixa-footer">
             <div class="caixa-sites-regex">
                 <p>Sites de Teste Regex</p>
-                <a class="" href="https://regex101.com" target="_blank">regex101</a>
-                <a class="" href="https://regexr.com" target="_blank">regexr</a>
+                <a class="" target="_blank" href="https://regex101.com">regex101</a>
+                <a class="" target="_blank" href="https://regexr.com">regexr</a>
             </div>
             <div class="caixa-refe">
                 <p>Referências</p>
-                <a class="" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions" target="_blank">developer.mozilla</a>
-                <a class="" href="https://www.w3schools.com/js/js_regexp.asp" target="_blank">w3schools</a>
+                <a class="" target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions">developer.mozilla</a>
+                <a class="" target="_blank" href="https://www.w3schools.com/js/js_regexp.asp">w3schools</a>
             </div>
         </div>
         <p>©copyrigth ADS2025. Todos os direitos reservados</p>

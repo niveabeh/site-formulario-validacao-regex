@@ -132,7 +132,14 @@ section {
   height: 100%;
   border-radius: 50px;
 }
-
+.cod-vermelho{
+  color: #ff0000e3;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.exemplo-regex p{
+  line-height: 30px;
+}
 
 .container-vidro {
   border: 1px solid rgba(255, 255, 255, 0.158);
@@ -164,6 +171,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.158);
   width: 35vw; 
   height: 300px;
@@ -291,7 +299,7 @@ section {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
   margin-top: 40px;
 }
 

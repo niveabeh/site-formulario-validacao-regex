@@ -20,8 +20,8 @@
         <ul>
             <li><a href="#hero">Início</a></li>
             <li><a href="#historia1">História</a></li>
-            <li><a href="#caracter">Caracter</a></li>
             <li><a href="#form-invalido">Sem ReGex</a></li>
+            <li><a href="#caracter">Caracter</a></li>
             <li><a href="#codigo-teste">Teste</a></li>
             <li><a href="#formulario">Com ReGex</a></li>
         </ul>
@@ -143,16 +143,18 @@
     <section id="caracter" class="secao-container-caracter">
         <div class="container-caixa-lado">
             <div class="container-esquerdo">
-
-
                 <h2>CARACTERES</h2>
                 <div class="container-caracteres">
+                    
                     <p id="paragrafoExplica">
                         Clique no caractere desejado para saber a sua função.
                     </p>
                 </div>
             </div>
             <div class="container-direito">
+                <div class="exemplo-regex">
+                        <p>const expNome =<span class="cod-vermelho"> /^[A-Za-zÁ-ü]{3,}([ ][A-Za-zÁ-ü]{2,})+$/</span>;</p>
+                    </div>
                 <div class="container-caracter">
                     <div class="tecla">/</div>
                     <div class="tecla">.</div>
@@ -181,8 +183,16 @@
         <div class="container-exemplo">
             <h2>Vamos Praticar um Pouco</h2>
             <div class="container-codigo-teste">
-                <p> <span class="textConst">const</span> <span class="textVariavel">variavelRegex</span> <span
-                        class="textIgual"> = </span><span class="implementarCod"></span></p>
+                <p> <span class="textConst">
+                        <p>let nome = document.getElementById('nomeCompleto').value;<br>
+
+                            const expNome =</span><span class="implementarCod"></span>;<br>
+                            
+                             if (!expNome.test(nome)) {<br>
+                                alteraTextp.textContent = "Nome inválido!!!";<br>
+                                document.getElementById('nomeCompleto').focus();<br>
+                                return false;<br>
+                             }</p>
             </div>
             <div class="container-teste-input">
                 <label for="testeCod">Faça um código Regex</label>

@@ -87,8 +87,8 @@ function ValidarForm() {
     return false;
 
   } else {
-    abrirModal();
     alteraTexto.textContent = "Dados enviados com sucesso!! ✅";
+    modal.showModal();
     return false;
   }
 

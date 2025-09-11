@@ -1,4 +1,4 @@
-hidden* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -651,7 +651,6 @@ footer p{
   font-size: 18px;
   color: #ffffffd8;
 }
-
 @keyframes flutuar {
   0% {
     transform: translateY(0);

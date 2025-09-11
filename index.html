@@ -87,63 +87,66 @@
     </section>
 
     <section id="form-invalido" class="secao-form-invalido">
+         <div class="caixa-botao">
+              
+            </div>
         <div class="caixa-form-exemplo">
             <div class="sem-regex">
-            <p>Sem Regex</p>
-            <form id="sem-regex" action="#form-invalido">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <div class="container-caixa-campos">
-                        <div class="container-caixa-input">
-                            <label for="nome1">Nome Completo</label>
-                            <input type="text" id="nome1" name="nome" required placeholder="Digite seu nome completo">
+                <p>Sem Regex</p>
+                <form id="sem-regex" action="#form-invalido">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="container-caixa-campos">
+                            <div class="container-caixa-input">
+                                <label for="nome1">Nome Completo</label>
+                                <input type="text" id="nome1" name="nome" required
+                                    placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="container-caixa-input">
+                                <label for="cpf1">CPF</label>
+                                <input type="text" id="cpf1" name="cpf" required placeholder="000.000.000-00">
+                            </div>
                         </div>
-                        <div class="container-caixa-input">
-                            <label for="cpf1">CPF</label>
-                            <input type="text" id="cpf1" name="cpf" required placeholder="000.000.000-00">
+                        <div class="container-caixa-campos">
+                            <div class="container-caixa-input">
+                                <label for="rg2">RG</label>
+                                <input type="text" id="rg2" name="rg" required placeholder="0-000-000">
+                            </div>
+                            <div class="container-caixa-input">
+                                <label for="data_nasc1">Data de Nascimento</label>
+                                <input type="text" id="data_nasc1" name="data_nasc" required placeholder="DD/MM/AAAA">
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-caixa-campos">
-                        <div class="container-caixa-input">
-                            <label for="rg2">RG</label>
-                            <input type="text" id="rg2" name="rg" required placeholder="0-000-000">
-                        </div>
-                        <div class="container-caixa-input">
-                            <label for="data_nasc1">Data de Nascimento</label>
-                            <input type="text" id="data_nasc1" name="data_nasc" required placeholder="DD/MM/AAAA">
-                        </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Contato</legend>
-                    <div class="container-caixa-campos">
-                        <div class="container-caixa-input">
-                            <label for="email1">E-mail</label>
-                            <input type="email" id="email1" name="email1" required placeholder="seu@email.com">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <div class="container-caixa-campos">
+                            <div class="container-caixa-input">
+                                <label for="email1">E-mail</label>
+                                <input type="email" id="email1" name="email1" required placeholder="seu@email.com">
+                            </div>
+                            <div class="container-caixa-input">
+                                <label for="fone">Telefone</label>
+                                <input type="tel" id="fone" name="telefone" required placeholder="(99) 99999-9999">
+                            </div>
                         </div>
                         <div class="container-caixa-input">
-                            <label for="fone">Telefone</label>
-                            <input type="tel" id="fone" name="telefone" required placeholder="(99) 99999-9999">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep" required placeholder="00000-000">
                         </div>
-                    </div>
-                    <div class="container-caixa-input">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" name="cep" required placeholder="00000-000">
-                    </div>
-                </fieldset>
+                    </fieldset>
 
-                <div class="container-btn-acoes">
-                    <button type="submit" class="btnsubmit">Finalizar Cadastro</button>
-                    <button type="reset" class="btnreset">Limpar</button>
-                </div>
-            </form>
+                    <div class="container-btn-acoes">
+                        <button type="submit" class="btnsubmit">Finalizar Cadastro</button>
+                        <button type="reset" class="btnreset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="caixa-botao">
+                <a href="#caracter" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="Seta para baixo"></a>
+            </div>
         </div>
-        <div class="caixa-botao">
-            <a href="#caracter" class="seta-down"><img src="assets/img/icone-arrow.svg" alt="Seta para baixo"></a>
-        </div>
-        </div>
-        
     </section>
 
     <section id="caracter" class="secao-container-caracter">
@@ -151,7 +154,7 @@
             <div class="container-esquerdo">
                 <h2>CARACTERES</h2>
                 <div class="container-caracteres">
-                    
+
                     <p id="paragrafoExplica">
                         Clique no caractere desejado para saber a sua função.
                     </p>
@@ -159,11 +162,12 @@
             </div>
             <div class="container-direito">
                 <div class="exemplo-regex">
-                        <p>const expNome =<span class="cod-vermelho"> /^<span class="pri-cod">[A-Za-zÁ-ü]{3,}</span><span class="seg-cod">([ ][A-Za-zÁ-ü]{2,})+$/</span>;</p>
-                    </div>
-                    <p style="color: rgba(255, 255, 255, 0.363);" id="paragrafoExplica">
-                        Clique no caractere desejado para saber a sua função.
-                    </p> 
+                    <p>const expNome =<span class="cod-vermelho"> /^<span class="pri-cod">[A-Za-zÁ-ü]{3,}</span><span
+                                class="seg-cod">([ ][A-Za-zÁ-ü]{2,})+$/</span>;</p>
+                </div>
+                <p style="color: rgba(255, 255, 255, 0.363);" id="paragrafoExplica">
+                    Clique no caractere desejado para saber a sua função.
+                </p>
                 <div class="container-caracter">
                     <div class="tecla">/</div>
                     <div class="tecla">^</div>
@@ -202,6 +206,7 @@
                                 document.getElementById('ceo').focus();<br>
                                 return false;<br>
                              }</p>
+
             </div>
             <div class="container-teste-input">
                 <label for="testeCod">Faça um código Regex</label>

@@ -7,8 +7,6 @@ function ValidarForm() {
   const expEmail = /^[A-Za-z0-9_\-.]{2,}@(gmail|outlook|hotmail)\.com(\.br)?$/;
   const expTelefone = /^[(][0-9]{2}[)][ ][0-9]{4,5}[-][0-9]{4}$/;
   const expCEP = /^[0-9]{5}-[0-9]{3}$/;
-  // const expUsuario = /^[A-Za-z]{3,}([_\-A-Za-z0-9]{1,})?$/;
-  // const expSenha = /^[A-Za-z]{1,}[0-9]{1,}[.|\/@*\-+_]{1,}$/;
 
   let nome2 = document.getElementById('nomeCompleto').value;
   let cpf = document.getElementById('cadastroPessoaFisica').value;
@@ -17,10 +15,9 @@ function ValidarForm() {
   let email = document.getElementById('EmailPessoal').value;
   let fone = document.getElementById('Telefone').value;
   let cep = document.getElementById('CodigoEnderecamento').value;
-  // let usuario = document.getElementById('user').value;
-  // let senha = document.getElementById('palavraChave').value;
 
-  let alteraTextp = document.getElementById('texto-aviso');
+
+  let alteraTexto = document.getElementById('texto-aviso');
 
   const modal = document.getElementById('dialog');
   const fecharModal = document.getElementById('fechar');
@@ -32,7 +29,7 @@ function ValidarForm() {
   });
 
   if (!expNome.test(nome2)) {
-    alteraTextp.textContent = "Nome inválido!!!";
+    alteraTexto.textContent = "Nome inválido!!!";
     document.getElementById('nomeCompleto').focus();
     modal.showModal();
     return false;
@@ -40,7 +37,7 @@ function ValidarForm() {
 
   else if (!expCPF.test(cpf)) {
 
-    alteraTextp.textContent = "CPF inválido!!!";
+    alteraTexto.textContent = "CPF inválido!!!";
     document.getElementById('cadastroPessoaFisica').focus();
     modal.showModal();
     return false;
@@ -48,7 +45,7 @@ function ValidarForm() {
   }
   else if (!expRg.test(rg)) {
 
-    alteraTextp.textContent = "RG inválido!!!";
+    alteraTexto.textContent = "RG inválido!!!";
     document.getElementById('registoGeral').focus();
     modal.showModal();
     return false;
@@ -57,7 +54,7 @@ function ValidarForm() {
 
   else if (!expDTNas.test(dataNas)) {
 
-    alteraTextp.textContent = "Data de nascimento inválido!!!";
+    alteraTexto.textContent = "Data de nascimento inválido!!!";
     document.getElementById('dataNascimento').focus();
     modal.showModal();
     return false;
@@ -66,7 +63,7 @@ function ValidarForm() {
 
   else if (!expEmail.test(email)) {
 
-    alteraTextp.textContent = "E-mail inválido!!!";
+    alteraTexto.textContent = "E-mail inválido!!!";
     document.getElementById('EmailPessoal').focus();
     modal.showModal();
     return false;
@@ -75,7 +72,7 @@ function ValidarForm() {
 
   else if (!expTelefone.test(fone)) {
 
-    alteraTextp.textContent = "Telefone inválido!!!";
+    alteraTexto.textContent = "Telefone inválido!!!";
     document.getElementById('Telefone').focus();
     modal.showModal();
     return false;
@@ -84,34 +81,42 @@ function ValidarForm() {
 
   else if (!expCEP.test(cep)) {
 
-    alteraTextp.textContent = "CEP inválido!!!";
+    alteraTexto.textContent = "CEP inválido!!!";
     document.getElementById('CodigoEnderecamento').focus();
     modal.showModal();
     return false;
 
-  }
-
-  // else if (!expUsuario.test(usuario)) {
-  //   alteraTextp.textContent = "Nome de usuário inválido!!!";
-  //   document.getElementById('user').focus();
-  //   modal.showModal();
-  //   return false;
-  // }
-
-  // else if (!expSenha.test(senha)) {
-
-  //   alteraTextp.textContent = "Senha inválido!!!";
-  //   document.getElementById('palavraChave').focus();
-  //   modal.showModal();
-  //   return false;
-
-  // }
-  else {
+  } else {
     abrirModal();
-    alteraTextp.textContent = "Dados enviados com sucesso!! ✅";
+    alteraTexto.textContent = "Dados enviados com sucesso!! ✅";
     return false;
   }
+
 }
+
+// Tirado do projeto devido ao tempo de apresentação...
+// const expUsuario = /^[A-Za-z]{3,}([_\-A-Za-z0-9]{1,})?$/;
+// const expSenha = /^[A-Za-z]{1,}[0-9]{1,}[.|\/@*\-+_]{1,}$/;
+
+// let usuario = document.getElementById('user').value;
+// let senha = document.getElementById('palavraChave').value;
+
+// else if (!expUsuario.test(usuario)) {
+//   alteraTextp.textContent = "Nome de usuário inválido!!!";
+//   document.getElementById('user').focus();
+//   modal.showModal();
+//   return false;
+// }
+
+// else if (!expSenha.test(senha)) {
+
+//   alteraTextp.textContent = "Senha inválido!!!";
+//   document.getElementById('palavraChave').focus();
+//   modal.showModal();
+//   return false;
+
+// }
+
 
 const btnVoltar = document.getElementById('btn-voltar');
 window.addEventListener('scroll', () => {
@@ -177,6 +182,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
-
-
 

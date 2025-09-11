@@ -28,7 +28,21 @@ body {
   background: #6e35a7; 
   border-radius: 100px;
 }
-
+.caixa-form-exemplo{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+.caixa-botao{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 nav {
   position: fixed;
   top: 10px;
@@ -137,6 +151,13 @@ section {
   letter-spacing: 2px;
   font-size: 18px;
 }
+.exemplo-regex{
+  padding: 20px;
+  border: 1px solid #ffffff4f;
+  background: #1f1a24;
+  border-radius: 12px;
+  margin-bottom: 4%;
+}
 .exemplo-regex p{
   line-height: 30px;
 }
@@ -180,30 +201,7 @@ section {
   background-color: rgba(107, 70, 129, 0.26);
   backdrop-filter: blur(30px);
 }
-.container-caracter-funcao{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-.caixa-caracter{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  border: 1px solid #ffffff1e;
-  width: 100%;
-  gap: 12px;
-  padding: 20px;
-}
-.caixa-caracter p{
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: #ffffffdc;
 
-}
 .container-esquerdo h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -375,7 +373,8 @@ fieldset {
   background: rgb(32, 30, 30);
   box-shadow: 0 5px 12px rgba(226, 226, 226, 0.089);
   backdrop-filter: blur(30px);
-  height: 20vh;
+  letter-spacing: 1px;
+  line-height: 30px;
   width: 80%;
   padding: 40px;
   border-radius: 20px;
@@ -410,26 +409,7 @@ fieldset {
   background: rgb(32, 30, 30);
 }
 
-.textVariavel,
-.textConst,
-.textIgual,
-.implementarCod {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
 
-.textVariavel {
-  color: rgb(98, 101, 247);
-}
-
-.textConst {
-  color: rgba(12, 157, 253, 0.76);
-}
-
-.textIgual {
-  color: rgba(247, 247, 248, 0.63);
-}
 
 .implementarCod {
   color: rgba(240, 42, 42, 0.986);

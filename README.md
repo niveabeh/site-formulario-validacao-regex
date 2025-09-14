@@ -35,7 +35,7 @@ Este projeto foi desenvolvido com versionamento de código em equipe, com colabo
 ## 📸 Imagens do Projeto
 
 ### 🖼️ Layout Geral:
-![print-layout](https://github.com/niveabeh/site-formulario-validacao-regex/blob/main/assets/img-proj-regex/hero.png?raw=true)
+![print-layout](https://github.com/niveabeh/site-formulario-validacao-regex/blob/main/assets/img-proj-regex/hero.png?raw=true](https://github.com/niveabeh/site-formulario-validacao-regex/blob/main/assets/img-proj-regex/hero-regex.png)
 
 ### 🧾 Formulário com validação:
 ![print-formulario](https://github.com/niveabeh/site-formulario-validacao-regex/blob/main/assets/img-proj-regex/form.png?raw=true)

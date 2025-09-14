@@ -26,7 +26,7 @@ Este projeto foi desenvolvido com versionamento de código em equipe, com colabo
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5** — estrutura da página
-- **CSS3** — estilização e responsividade
+- **CSS3** — estilização
 - **JavaScript** — lógica de validação e uso de Expressões Regulares
 
 ---

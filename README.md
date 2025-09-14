@@ -39,7 +39,7 @@ Este projeto foi desenvolvido com versionamento de código em equipe, com colabo
 
 ### 🧾 Formulário com validação:
 ![print-formulario]
-(https://github.com/niveabeh/site-formulario-validacao-regex/blob/main/assets/img-proj-regex/form.png)
+(https://github.com/niveabeh/site-formulario-validacao-regex/blob/main/assets/img-proj-regex/form.png).
 
 ---
 
